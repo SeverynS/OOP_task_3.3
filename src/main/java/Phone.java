@@ -4,10 +4,8 @@ public class Phone {
     private int weight;
 
     public Phone(String number, String model, int weight) {
-        this.number = number;
-        this.model = model;
+        this(number, model);
         this.weight = weight;
-        new Phone(number, model); //не совсем понял 8) Вызвать из конструктора с тремя параметрами конструктор с двумя
     }
 
     public Phone(String number, String model) {
